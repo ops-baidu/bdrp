@@ -1,4 +1,0 @@
-bdrp
-====
-
-baidu redis cluster
