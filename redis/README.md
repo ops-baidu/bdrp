@@ -23,6 +23,7 @@ Bdrp has some new features below compared to twemproxy
 nutcracker, redis-server, redis-sentinel should be configured properly to set up a bdrp cluster with the features mentioned above. Some key configuration items in each component will be described below.
 
 + **nutcracker**: 
+  + program launch parameters: -A sentinel-ip and -S sentinel-port should be added to launch parameters in order to make nutcracker know where is your sentinel-server. It will be set to default 127.0.0.1:26379 if you don't give these two parameters.
   + auto\_eject\_hosts: It should be configured to false to avoid data loss. Bdrp use redis master slave switch to achieve high availability instead of consistent hashing which will cause data loss.
   + nodes name: Each redis sharding must have nodes name. Because nutcracker will use nodes name to identify which master redis is switched in redis-sentinel's publish message. 
   + mutiple addresses in redis sharding: To enable read write spliting, mutiple addresses should be configured in each redis sharding. The first address should be the master redis in the sharding, it will be forwarded write requests. The others should be the slave redis in the sharding, they will be forwarded read requests round robin. Configuring only one address to disable it.
