@@ -1,4 +1,4 @@
-# bdrp (baidu redis paltform)
+# bdrp (baidu redis platform)
 
 **bdrp** is redis cluster solution based on [twemproxy](https://github.com/twitter/twemproxy) and [redis](http://redis.io/). Bdrp use _nutcracker_, _redis-server_ and _redis-sentinel_ to build a high available cluster with higher data reliability compared to twemproxy's  consistent hashing.
 
