@@ -82,7 +82,7 @@ https://github.com/ops-baidu/bdrp/issues
 
 ## Contributors
 
-* Qi Zebin ([@andyqzb](http://weibo.com/andyqzb))
+* Zhang Dongyang ([@happydayxiaoz](zhangdongyang@baidu.com))
 
 ## License
 
